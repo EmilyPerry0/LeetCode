@@ -4,6 +4,6 @@ data = r.json()
 with open('README.md', 'w') as f:
     f.write(f"""## Total Problems Solved: **{data['solvedProblem']}**  
     
-    Easy: **{data['easySolved']}**  
-    Medium: **{data['mediumSolved']}**  
-    Hard: **{data['hardSolved']}**""")
+Easy: **{data['easySolved']}**  
+Medium: **{data['mediumSolved']}**  
+Hard: **{data['hardSolved']}**""")
