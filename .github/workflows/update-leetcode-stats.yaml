@@ -21,17 +21,7 @@ jobs:
 
       - name: Get stats
         run: |
-          python -c "
-          import requests, json
-          r = requests.get('https://alfa-leetcode-api.onrender.com/emilyperry0/solved')
-          data = r.json()
-          solved = data['solvedProblem']
-          easy = data['easySolved']
-          medium = data['mediumSolved']
-          hard = data['hardSolved']
-          with open('README.md', 'w') as f:
-              f.write(f"Total Problems Solved: {solved}\n\nEasy: {easy}\nMedium: {medium}\nHard: {hard}")
-          "
+          python update_stats.py
 
       - name: Commit changes
         run: |
