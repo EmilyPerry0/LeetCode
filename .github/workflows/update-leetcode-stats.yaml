@@ -23,7 +23,7 @@ jobs:
         run: |
           python -c "
           import requests, json
-          r = requests.get('https://leetcodeapi-v1.vercel.app/questions/emilyperry0')
+          r = requests.get('https://alfa-leetcode-api.onrender.com/emilyperry0/solved')
           data = r.json()
           with open('README.md', 'w') as f:
               f.write(json.dumps(data, indent=2))
