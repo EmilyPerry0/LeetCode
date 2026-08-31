@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: '3.13' 
       - name: Get stats
-        run: python -c "import requests; r = requests.get('https://leetcodeapi-v1.vercel.app/questions/emilyperry0'); with open("README.md", "w") as f: f.write(r.json())"
+        run: python -c "import requests; r = requests.get('https://leetcodeapi-v1.vercel.app/questions/emilyperry0'); with open('README.md', 'w') as f: f.write(r.json())"
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
