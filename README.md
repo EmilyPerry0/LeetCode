@@ -1,5 +1,5 @@
-## Total Problems Solved: **23**  
+## Total Problems Solved: 29  
     
-Easy: **19**  
+Easy: **25**  
 Medium: **4**  
 Hard: **0**
